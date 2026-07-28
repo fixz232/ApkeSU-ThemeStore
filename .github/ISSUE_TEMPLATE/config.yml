@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ApkeSU support and bug reports
+    url: https://github.com/fixz232/ApkeSU/issues
+    about: Report Manager bugs and request non-theme-store features in the ApkeSU repository.
