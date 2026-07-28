@@ -28,6 +28,7 @@ from validate_catalog import (  # noqa: E402
     ValidationFailure,
     validate_embedded_assets,
     validate_image,
+    validate_semantics,
 )
 
 
@@ -363,6 +364,25 @@ class ModerationTest(unittest.TestCase):
         update_catalog(catalog, submission, "fixz232/ApkeSU-ThemeStore", 200)
 
         self.assertEqual(before, catalog)
+
+    def test_catalog_allows_exact_standalone_repository_migration(self) -> None:
+        current = self.catalog_with_existing_theme()
+        previous = json.loads(json.dumps(current))
+        previous["themes"][0]["downloadUrl"] = previous["themes"][0][
+            "downloadUrl"
+        ].replace("/ApkeSU-ThemeStore/", "/ApkeSU/")
+
+        validate_semantics(current, previous)
+
+    def test_catalog_rejects_unrelated_repository_change_without_version_bump(self) -> None:
+        previous = self.catalog_with_existing_theme()
+        current = json.loads(json.dumps(previous))
+        current["themes"][0]["downloadUrl"] = current["themes"][0][
+            "downloadUrl"
+        ].replace("/ApkeSU-ThemeStore/", "/AnotherStore/")
+
+        with self.assertRaises(ValidationFailure):
+            validate_semantics(current, previous)
 
     def valid_registry(self) -> dict:
         return {

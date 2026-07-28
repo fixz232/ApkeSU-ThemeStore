@@ -42,6 +42,35 @@ class ValidationFailure(Exception):
     pass
 
 
+def is_standalone_repository_migration(old_url: object, new_url: object) -> bool:
+    if not isinstance(old_url, str) or not isinstance(new_url, str):
+        return False
+    old = urlparse(old_url)
+    new = urlparse(new_url)
+    if (
+        old.scheme != "https"
+        or new.scheme != "https"
+        or (old.hostname or "").lower() != "github.com"
+        or (new.hostname or "").lower() != "github.com"
+        or old.query
+        or new.query
+        or old.fragment
+        or new.fragment
+    ):
+        return False
+    old_parts = old.path.split("/")
+    new_parts = new.path.split("/")
+    return (
+        len(old_parts) == 7
+        and len(new_parts) == 7
+        and old_parts[1:5] == ["fixz232", "ApkeSU", "releases", "download"]
+        and new_parts[1:5]
+        == ["fixz232", "ApkeSU-ThemeStore", "releases", "download"]
+        and old_parts[5:] == new_parts[5:]
+        and all(old_parts[5:])
+    )
+
+
 def load_json(path: Path) -> dict:
     with path.open("r", encoding="utf-8") as handle:
         value = json.load(handle)
@@ -155,8 +184,21 @@ def validate_semantics(catalog: dict, previous: dict | None) -> list[dict]:
                 continue
             if theme["versionCode"] < old.get("versionCode", 0):
                 raise ValidationFailure(f"{theme['id']}: versionCode cannot decrease")
-            identity_changed = any(theme.get(field) != old.get(field) for field in identity_fields)
-            if identity_changed and theme["versionCode"] <= old.get("versionCode", 0):
+            changed_fields = {
+                field for field in identity_fields if theme.get(field) != old.get(field)
+            }
+            repository_migration = (
+                changed_fields == {"downloadUrl"}
+                and is_standalone_repository_migration(
+                    old.get("downloadUrl"),
+                    theme.get("downloadUrl"),
+                )
+            )
+            if (
+                changed_fields
+                and theme["versionCode"] <= old.get("versionCode", 0)
+                and not repository_migration
+            ):
                 raise ValidationFailure(
                     f"{theme['id']}: package identity changed without increasing versionCode"
                 )
