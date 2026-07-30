@@ -1,7 +1,7 @@
 {
   "schema": "io.github.fixz.apkesu.theme-catalog",
   "version": 1,
-  "generatedAt": 1785219369094,
+  "generatedAt": 1785453763702,
   "categories": [
     {
       "id": "anime",
@@ -9,6 +9,38 @@
     }
   ],
   "themes": [
+    {
+      "id": "1.0.0",
+      "name": "丛雨",
+      "author": {
+        "id": "wjn-boop",
+        "name": "wjn-boop",
+        "bio": "主题制作者",
+        "profileUrl": "https://github.com/wjn-boop"
+      },
+      "description": "无",
+      "category": "anime",
+      "tags": [
+        "无"
+      ],
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "packageSchema": "io.github.fixz.apkesu.theme",
+      "packageVersion": 5,
+      "minManagerVersionCode": 32700,
+      "maxManagerVersionCode": 32700,
+      "coverUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/theme-store/assets/default-cover.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/fixz232/ApkeSU-ThemeStore/releases/download/theme-1.0.0-v1/1.0.0-v1.kstheme",
+      "sha256": "61a0e3a4a97775d4788f0027a314613a28a2a8418f7a24b84843b8b3550e0db9",
+      "sizeBytes": 110252292,
+      "license": "CC-BY-4.0",
+      "changelog": "后续会在q群发投票，投票最高的会做第二版",
+      "publishedAt": 1785453763702,
+      "status": "published",
+      "featured": false,
+      "downloadCount": 0
+    },
     {
       "id": "hoshinotakanashibluearchiveblue101",
       "name": "蔚蓝档案_小鸟游星野_蓝_1.0.1\n\n名称:蔚蓝档案_小鸟游星野_蓝_1.0.1\n作者:回忆里的海平线\n时间:20260728124800\n简介:无",
