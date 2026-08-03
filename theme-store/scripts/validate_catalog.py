@@ -296,7 +296,7 @@ def validate_component_header(style: object, kind: str, label: str) -> dict:
         raise ValidationFailure(f"{label}: component style must be an object")
     if (
         style.get("schema") != COMPONENT_STYLE_SCHEMA
-        or style.get("version") != 1
+        or style.get("version") not in {1, 2}
         or style.get("kind") != kind
     ):
         raise ValidationFailure(f"{label}: unsupported component style")
@@ -439,12 +439,23 @@ def validate_embedded_assets(
     if switch_style is not None:
         if not isinstance(switch_style, dict):
             raise ValidationFailure(f"{label}: invalid switch style metadata")
-        image_uri = switch_style.get("imageUri")
-        if isinstance(image_uri, str) and image_uri.strip():
-            raise ValidationFailure(f"{label}: device-specific imageUri is not allowed")
-        image_asset = switch_style.get("imageAsset")
-        if image_asset is not None:
-            if switch_style["style"]["source"] != "image":
+        switch_style_config = switch_style.get("style")
+        if not isinstance(switch_style_config, dict):
+            raise ValidationFailure(f"{label}: switch style data is missing")
+        image_assets = (
+            ("imageAsset", "imageUri", "image_sha256"),
+            ("imageOnAsset", "imageOnUri", "image_on_sha256"),
+        )
+        embedded_images = 0
+        for asset_key, uri_key, hash_key in image_assets:
+            uri = switch_style.get(uri_key)
+            if isinstance(uri, str) and uri.strip():
+                raise ValidationFailure(f"{label}: device-specific {uri_key} is not allowed")
+            image_asset = switch_style.get(asset_key)
+            if image_asset is None:
+                continue
+            embedded_images += 1
+            if switch_style_config.get("source") != "image":
                 raise ValidationFailure(f"{label}: pixel switch contains an unexpected image")
             if not isinstance(image_asset, dict):
                 raise ValidationFailure(f"{label}: invalid switch style image metadata")
@@ -463,11 +474,13 @@ def validate_embedded_assets(
                 with archive.open(info) as image_file:
                     while chunk := image_file.read(64 * 1024):
                         digest.update(chunk)
-                expected_hash = switch_style["style"].get("image_sha256")
+                expected_hash = switch_style_config.get(hash_key)
                 if not isinstance(expected_hash, str) or not SHA_RE.fullmatch(expected_hash):
                     raise ValidationFailure(f"{label}: invalid switch style image hash")
                 if digest.hexdigest().lower() != expected_hash.lower():
                     raise ValidationFailure(f"{label}: switch style image SHA-256 mismatch")
+        if switch_style_config.get("source") == "image" and embedded_images == 0:
+            raise ValidationFailure(f"{label}: image switch is missing its embedded image")
 
     for owner in owners:
         for asset_key, uri_key in (("asset", "uri"), ("videoAsset", "videoUri")):
