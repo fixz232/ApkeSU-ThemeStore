@@ -1,7 +1,7 @@
 {
   "schema": "io.github.fixz.apkesu.theme-catalog",
   "version": 1,
-  "generatedAt": 1785726030431,
+  "generatedAt": 1785728369868,
   "categories": [
     {
       "id": "anime",
@@ -150,6 +150,42 @@
       "status": "published",
       "featured": false,
       "downloadCount": 19
+    },
+    {
+      "id": "nhbaizi520",
+      "name": "白子最终版",
+      "author": {
+        "id": "hyldhpx",
+        "name": "回忆里的海平线",
+        "bio": "",
+        "profileUrl": "https://github.com/hyldhpx",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/207416886?v=4&size=64"
+      },
+      "description": "相关素材壁纸图标：https://pan.quark.cn/s/0b67e5f580fb",
+      "category": "anime",
+      "tags": [
+        "NH",
+        "白子"
+      ],
+      "versionCode": 520,
+      "versionName": "5.2.0",
+      "packageSchema": "io.github.fixz.apkesu.theme",
+      "packageVersion": 6,
+      "minManagerVersionCode": 1,
+      "maxManagerVersionCode": null,
+      "coverUrl": "https://github.com/HYLDHPX/Theme/releases/download/%E7%99%BD%E5%AD%90%E6%9C%80%E7%BB%88%E7%89%88/520.jpg",
+      "screenshots": [
+        "https://github.com/HYLDHPX/Theme/releases/download/%E7%99%BD%E5%AD%90%E6%9C%80%E7%BB%88%E7%89%88/520.jpg"
+      ],
+      "downloadUrl": "https://github.com/fixz232/ApkeSU-ThemeStore/releases/download/theme-nhbaizi520-v520/nhbaizi520-v520.kstheme",
+      "sha256": "6e32cdf6694bfb5dc365a0cf931c9c066b5192ec4039bb0bc58c02681ee6a6b1",
+      "sizeBytes": 18991562,
+      "license": "CC-BY-4.0",
+      "changelog": "",
+      "publishedAt": 1785728369868,
+      "status": "published",
+      "featured": false,
+      "downloadCount": 0
     },
     {
       "id": "rikka-takanashi",
