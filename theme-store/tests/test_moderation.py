@@ -85,7 +85,7 @@ class ModerationTest(unittest.TestCase):
         with self.assertRaises(ValidationFailure):
             parse_manifest(json.dumps(manifest), "alice-theme")
 
-    def test_manifest_accepts_v5_package_but_rejects_v6(self) -> None:
+    def test_manifest_accepts_v5_and_v6_packages(self) -> None:
         manifest = self.valid_manifest()
         parsed = parse_manifest(json.dumps(manifest), "alice-theme")
         self.assertEqual(4, parsed["packageVersion"])
@@ -95,8 +95,8 @@ class ModerationTest(unittest.TestCase):
         self.assertEqual(5, parsed["packageVersion"])
 
         manifest["theme"]["packageVersion"] = 6
-        with self.assertRaises(ValidationFailure):
-            parse_manifest(json.dumps(manifest), "alice-theme")
+        parsed = parse_manifest(json.dumps(manifest), "alice-theme")
+        self.assertEqual(6, parsed["packageVersion"])
 
     def test_manifest_uses_first_screenshot_when_cover_is_blank(self) -> None:
         manifest = self.valid_manifest()
