@@ -226,6 +226,44 @@ class ModerationTest(unittest.TestCase):
                 "theme",
             )
 
+    def test_cloud_package_validates_v2_switch_images(self) -> None:
+        off_path = "assets/component_switch_image.png"
+        on_path = "assets/component_switch_image_on.png"
+        off_bytes = b"validated v2 off image"
+        on_bytes = b"validated v2 on image"
+        style = self.valid_switch_component_style()
+        style.update(
+            {
+                "version": 2,
+                "image_sha256": hashlib.sha256(off_bytes).hexdigest(),
+                "image_on_sha256": hashlib.sha256(on_bytes).hexdigest(),
+                "image_on_mime": "image/png",
+                "image_on_uri": None,
+            }
+        )
+        metadata = {
+            "components": {
+                "switchStyle": {
+                    "style": style,
+                    "imageAsset": {"path": off_path},
+                    "imageOnAsset": {"path": on_path},
+                    "imageUri": None,
+                    "imageOnUri": None,
+                }
+            }
+        }
+        archive_bytes = io.BytesIO()
+        with zipfile.ZipFile(archive_bytes, "w") as archive:
+            archive.writestr(off_path, off_bytes)
+            archive.writestr(on_path, on_bytes)
+        archive_bytes.seek(0)
+
+        with zipfile.ZipFile(archive_bytes) as archive:
+            validate_embedded_assets(metadata, {off_path, on_path}, "theme", archive)
+            metadata["components"]["switchStyle"]["imageOnUri"] = "file:///private/on.png"
+            with self.assertRaises(ValidationFailure):
+                validate_embedded_assets(metadata, {off_path, on_path}, "theme", archive)
+
     def test_cloud_package_rejects_invalid_component_grid(self) -> None:
         style = self.valid_switch_component_style()
         style["track_on"]["width"] = 27
