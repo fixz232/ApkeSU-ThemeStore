@@ -139,7 +139,7 @@ def validate_semantics(catalog: dict, previous: dict | None) -> list[dict]:
             raise ValidationFailure(f"{label}.category is not declared")
         if theme.get("packageSchema") != PACKAGE_SCHEMA:
             raise ValidationFailure(f"{label}.packageSchema is unsupported")
-        if not isinstance(theme.get("packageVersion"), int) or not 1 <= theme["packageVersion"] <= 5:
+        if not isinstance(theme.get("packageVersion"), int) or not 1 <= theme["packageVersion"] <= 6:
             raise ValidationFailure(f"{label}.packageVersion is unsupported")
         if not isinstance(theme.get("versionCode"), int) or theme["versionCode"] < 1:
             raise ValidationFailure(f"{label}.versionCode is invalid")
