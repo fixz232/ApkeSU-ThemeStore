@@ -1,7 +1,7 @@
 {
   "schema": "io.github.fixz.apkesu.theme-catalog",
   "version": 1,
-  "generatedAt": 1787544589655,
+  "generatedAt": 1788170005967,
   "categories": [
     {
       "id": "anime",
@@ -39,7 +39,7 @@
       "publishedAt": 1785726030431,
       "status": "published",
       "featured": false,
-      "downloadCount": 48
+      "downloadCount": 68
     },
     {
       "id": "hoshinotakanashibluearchiveblue101",
@@ -75,7 +75,7 @@
       "publishedAt": 1785219369094,
       "status": "published",
       "featured": false,
-      "downloadCount": 31
+      "downloadCount": 40
     },
     {
       "id": "kaguya-hime",
@@ -112,7 +112,7 @@
       "publishedAt": 1784947544709,
       "status": "published",
       "featured": false,
-      "downloadCount": 95
+      "downloadCount": 122
     },
     {
       "id": "miku-nakano",
@@ -149,7 +149,7 @@
       "publishedAt": 1784947544709,
       "status": "published",
       "featured": false,
-      "downloadCount": 76
+      "downloadCount": 103
     },
     {
       "id": "nhbaizi520",
@@ -185,7 +185,7 @@
       "publishedAt": 1785728369868,
       "status": "published",
       "featured": false,
-      "downloadCount": 62
+      "downloadCount": 86
     },
     {
       "id": "rikka-takanashi",
@@ -222,7 +222,7 @@
       "publishedAt": 1784873972135,
       "status": "published",
       "featured": false,
-      "downloadCount": 53
+      "downloadCount": 65
     },
     {
       "id": "yosuga-no-sora",
@@ -259,7 +259,7 @@
       "publishedAt": 1784947544709,
       "status": "published",
       "featured": false,
-      "downloadCount": 53
+      "downloadCount": 68
     }
   ]
 }
