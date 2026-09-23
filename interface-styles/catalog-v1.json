@@ -1,7 +1,7 @@
 {
   "schema": "io.github.fixz.apkesu.interface-style-catalog",
-  "version": 1,
-  "generatedAt": 1790068557804,
+  "version": 2,
+  "generatedAt": 1790142915159,
   "styles": [
     {
       "id": "liquid-glass",
@@ -9,10 +9,10 @@
       "summary": "半透明毛玻璃界面",
       "engine": "liquid_glass",
       "variant": null,
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/liquid-glass.ksstyle",
-      "sha256": "87930a09ba48ab285df0b6a0d96a6f67fd8cf47d8f4dbe3a9c7bc20fe1c0fb52",
-      "sizeBytes": 256,
+      "sha256": "5b3a1a749466df07da78cc903e3f6442a9b050c7d4b8a7df9b4e42a06ae46b72",
+      "sizeBytes": 547,
       "accent": 4283987338
     },
     {
@@ -21,10 +21,10 @@
       "summary": "四季主题：春日",
       "engine": "snow",
       "variant": "spring",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/season-spring.ksstyle",
-      "sha256": "534df8d1a4f307602daefb8f7494018e6ba405a2b6172e01c368f73e4755f2ae",
-      "sizeBytes": 240,
+      "sha256": "41c9af7df1cb68cf85aa169f9bbf93ff572392760b7f12e7fbb6be54c8f81707",
+      "sizeBytes": 319573,
       "accent": 4283404098
     },
     {
@@ -33,10 +33,10 @@
       "summary": "四季主题：盛夏",
       "engine": "snow",
       "variant": "summer",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/season-summer.ksstyle",
-      "sha256": "264d7851283ab66a9d3ed62978aa8a74b24dff2b05932c423428791561123153",
-      "sizeBytes": 240,
+      "sha256": "80b9175f8d4cb4bf203b860e2edb4cae8a3948547a7b9f8100a2acfe4fafa611",
+      "sizeBytes": 398009,
       "accent": 4279663744
     },
     {
@@ -45,10 +45,10 @@
       "summary": "四季主题：金秋",
       "engine": "snow",
       "variant": "autumn",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/season-autumn.ksstyle",
-      "sha256": "bc77177af236fc306df335295c67c25820281239e4d3943b8d3c3f9c7548e25e",
-      "sizeBytes": 240,
+      "sha256": "6e8cc851971ddfa43f63da86e3e4bca1cd08867c28d6c8a1ddbe6f36fe1ecfde",
+      "sizeBytes": 552539,
       "accent": 4288309803
     },
     {
@@ -57,10 +57,10 @@
       "summary": "四季主题：冬雪",
       "engine": "snow",
       "variant": "winter",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/season-winter.ksstyle",
-      "sha256": "a924c53a593289664d8a8086606834ad245e6373c29189a2c6421e62f3745bb9",
-      "sizeBytes": 240,
+      "sha256": "08efc48b7d9bada8374852484f34889ddb1cd1c5ef2d252733131dc8fb579ee2",
+      "sizeBytes": 369628,
       "accent": 4280848006
     },
     {
@@ -69,10 +69,10 @@
       "summary": "雨境：细雨",
       "engine": "rain",
       "variant": "light_rain",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/rain-light.ksstyle",
-      "sha256": "0d5635fdd7e0863c3ad16e15a229a1cac2fe7bc1b12d7afd6ba16269839c0d86",
-      "sizeBytes": 239,
+      "sha256": "78ef2e9587e90ad0c4186858ab2227b80e838d4da9658da4e43685bc5ca13a7b",
+      "sizeBytes": 542,
       "accent": 4284380326
     },
     {
@@ -81,10 +81,10 @@
       "summary": "雨境：中雨",
       "engine": "rain",
       "variant": "medium_rain",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/rain-medium.ksstyle",
-      "sha256": "1b222c4d0e3b29d076d7b806a59008bc1863c05580ed9a1d5bb09b4cbd63a7c0",
-      "sizeBytes": 242,
+      "sha256": "3b517527a517ec0ffcb68e67cbdbf5b462205fd2d19ef86fca2d7fc78d1034f4",
+      "sizeBytes": 544,
       "accent": 4283397015
     },
     {
@@ -93,10 +93,10 @@
       "summary": "雨境：骤雨",
       "engine": "rain",
       "variant": "heavy_rain",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/rain-heavy.ksstyle",
-      "sha256": "600add299d0f978dcd4aef69fe8dee0f3479ae134d4258fc8721d48f9894ac5d",
-      "sizeBytes": 239,
+      "sha256": "a9ec7ff29f1e5af5031c97d08ce7190d58740aae9a72213cefbb64bf993557a1",
+      "sizeBytes": 540,
       "accent": 4282087023
     },
     {
@@ -105,10 +105,10 @@
       "summary": "雨境：雷暴",
       "engine": "rain",
       "variant": "thunderstorm",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/rain-thunderstorm.ksstyle",
-      "sha256": "0a586a1e76c0d2a04683b26d9d7809aaecda7a99ffcf0769926a1ac1cab2a461",
-      "sizeBytes": 250,
+      "sha256": "04573b2fce360044dcceff71fbd30fd209882d2d1eda828801520ff7a7e6d119",
+      "sizeBytes": 548,
       "accent": 4284907432
     },
     {
@@ -117,10 +117,10 @@
       "summary": "雨境：雨后",
       "engine": "rain",
       "variant": "after_rain",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/rain-after.ksstyle",
-      "sha256": "357b1920b629aab7e5d616bbb60c33ee576ce42d3d574f1cd94f3c17435dc6b2",
-      "sizeBytes": 239,
+      "sha256": "57d5b783d15defd1907ceee53b0926ad0f5c1b8ed67ac5c94f944de655148276",
+      "sizeBytes": 541,
       "accent": 4285631643
     },
     {
@@ -129,10 +129,10 @@
       "summary": "像素风：经典掌机",
       "engine": "pixel",
       "variant": "classic_handheld",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-classic-handheld.ksstyle",
-      "sha256": "add2e50327e00f14d3c80c02239aeab1ee6480170812cbb6bf40a132aff3c52c",
-      "sizeBytes": 279,
+      "sha256": "d2122d546257e9075cf6bbb8a286df505d383a9db2c7c579c0bf7a716d635742",
+      "sizeBytes": 558,
       "accent": 4283783999
     },
     {
@@ -141,10 +141,10 @@
       "summary": "像素风：霓虹街机",
       "engine": "pixel",
       "variant": "neon_arcade",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-neon-arcade.ksstyle",
-      "sha256": "adb2f910dcebef53dba0fbc391e63e3a2017c284695e2180f3c10eb6a86116bf",
-      "sizeBytes": 264,
+      "sha256": "11a9c9fc608033c7768c26f9c4b9efacb1c6aa1b32d1a84c776a0f26d17f15aa",
+      "sizeBytes": 549,
       "accent": 4278222715
     },
     {
@@ -153,10 +153,10 @@
       "summary": "像素风：田园原野",
       "engine": "pixel",
       "variant": "pastoral_fields",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-pastoral-fields.ksstyle",
-      "sha256": "3dc575094f07ba7a1729deeb76bbcace374bece0e591ae88720d9bad0d297372",
-      "sizeBytes": 276,
+      "sha256": "3479e893c246835c0b8ae2f5e5950222453e7788a8b1b153e2c5996e559a0fb7",
+      "sizeBytes": 557,
       "accent": 4284380752
     },
     {
@@ -165,10 +165,10 @@
       "summary": "像素风：星际航行",
       "engine": "pixel",
       "variant": "star_voyage",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-star-voyage.ksstyle",
-      "sha256": "d76e8c1ffa69df53942503dac054f7f84c309f5062213b217ece18e2f77fcb02",
-      "sizeBytes": 264,
+      "sha256": "618c4b5415409c7259672591828475ea75e85d74d00b1fb3338f2a1f6f301f67",
+      "sizeBytes": 552,
       "accent": 4283595463
     },
     {
@@ -177,10 +177,10 @@
       "summary": "像素风：墨玉",
       "engine": "pixel",
       "variant": "ink_jade",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-ink-jade.ksstyle",
-      "sha256": "788352d13a93920f8603e1fa760e79353e9a89916a15b5bc00319a48bab91b53",
-      "sizeBytes": 243,
+      "sha256": "6be18b8a1c8861cd2adb629cd219c35ef33484e5f337ea5e0997dad24cfed358",
+      "sizeBytes": 546,
       "accent": 4282216542
     },
     {
@@ -189,10 +189,10 @@
       "summary": "像素风：锈蚀荒原",
       "engine": "pixel",
       "variant": "rust_wasteland",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-rust-wasteland.ksstyle",
-      "sha256": "7621ccfcf272b534fdd802a83c3f7603895a6ea296e654fcef1304669d6fb19a",
-      "sizeBytes": 273,
+      "sha256": "0f862b70d286f3a49de7a4c54f6cfc26329e8148ad97f61c6a12c523b598d482",
+      "sizeBytes": 556,
       "accent": 4286730296
     },
     {
@@ -201,10 +201,10 @@
       "summary": "像素风：深海",
       "engine": "pixel",
       "variant": "ocean_depths",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-ocean-depths.ksstyle",
-      "sha256": "552fd18e4eec95484a906cf82b0eaff32279531faa88d05bc092d1e03963f6fb",
-      "sizeBytes": 255,
+      "sha256": "641e02c5336b711e6e023f65b12a00ec701bb61423609d5aaa42ac0631a220ef",
+      "sizeBytes": 552,
       "accent": 4279696010
     },
     {
@@ -213,10 +213,10 @@
       "summary": "像素风：赛博黑客",
       "engine": "pixel",
       "variant": "cyber_hacker",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-cyber-hacker.ksstyle",
-      "sha256": "02ced6e774ed2cc02c4bc230841583b26afd731d42358fdd4611d76b64453b5c",
-      "sizeBytes": 267,
+      "sha256": "25ae8c2b63e840ada2473c5e860a2305da7b9336f9a3047fc81d19e50ea8e4cf",
+      "sizeBytes": 553,
       "accent": 4288371967
     },
     {
@@ -225,10 +225,10 @@
       "summary": "像素风：三国",
       "engine": "pixel",
       "variant": "three_kingdoms",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-three-kingdoms.ksstyle",
-      "sha256": "2799900daed9fddb508aa09cb92d1c3b0c8d19fabe0a0c204b65c69fee651358",
-      "sizeBytes": 261,
+      "sha256": "e5ebfe86845aba7896e0bae3a8bacb2ca5a6462687b0183ae01e195688433171",
+      "sizeBytes": 555,
       "accent": 4284242255
     },
     {
@@ -237,10 +237,10 @@
       "summary": "像素风：汴梁市集",
       "engine": "pixel",
       "variant": "bianliang_market",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-bianliang-market.ksstyle",
-      "sha256": "8c5192eede79368465203e36e710d7f06a859b58b9d56d70a263bde1e4326d1e",
-      "sizeBytes": 279,
+      "sha256": "f42e0b95efc7a99a8f88b81551e43cfedd4a9c06337ae944badbbc6aa384200c",
+      "sizeBytes": 556,
       "accent": 4285744527
     },
     {
@@ -249,10 +249,10 @@
       "summary": "像素风：渔港",
       "engine": "pixel",
       "variant": "fishing_harbor",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-fishing-harbor.ksstyle",
-      "sha256": "c2a198d858a2bc6377370b1b42c34b3418dc34282efb3b6e4b6c9f28bd188f93",
-      "sizeBytes": 261,
+      "sha256": "f2a466dab2ae7a8ead811374cc14151e079c05021049db77eee8763ee69152f2",
+      "sizeBytes": 555,
       "accent": 4285093797
     },
     {
@@ -261,10 +261,10 @@
       "summary": "像素风：部落丛林",
       "engine": "pixel",
       "variant": "tribal_jungle",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-tribal-jungle.ksstyle",
-      "sha256": "087f04cdae7b4612937e6559119ade263c7bb88b5a38e7d171138f7ff2cb093e",
-      "sizeBytes": 270,
+      "sha256": "c06fb138353810c6d276172ed73ef853f101433d4627596ceb90312754ceac0f",
+      "sizeBytes": 554,
       "accent": 4283592005
     },
     {
@@ -273,10 +273,10 @@
       "summary": "像素风：熔岩谷",
       "engine": "pixel",
       "variant": "lava_valley",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-lava-valley.ksstyle",
-      "sha256": "7ce3365a12f995dbb12c404e8254c634d4a40116bfcf03511500dc54352c9702",
-      "sizeBytes": 258,
+      "sha256": "1c2efcf84b68af9f986674d3d4a9636f86cb9ef024f3322d70cc19eae2e98050",
+      "sizeBytes": 552,
       "accent": 4290266156
     },
     {
@@ -285,10 +285,10 @@
       "summary": "像素风：敦煌沙海",
       "engine": "pixel",
       "variant": "dunhuang_desert",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-dunhuang-desert.ksstyle",
-      "sha256": "6f5224e880f4cde1e27ad27bee572b1546653236fc5eaecd13dd2ff9d3b368f5",
-      "sizeBytes": 276,
+      "sha256": "82a00a5f7067566ce33d57dd7c214692e788ed3bc50309e97097928ea2445259",
+      "sizeBytes": 556,
       "accent": 4286278799
     },
     {
@@ -297,10 +297,10 @@
       "summary": "像素风：维京雪原",
       "engine": "pixel",
       "variant": "viking_snowfield",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-viking-snowfield.ksstyle",
-      "sha256": "deda0de81b10312babdc9bb6d1a78ca9dd12a037a1ce72bc1fbe776d31260064",
-      "sizeBytes": 279,
+      "sha256": "92bcf73d31a5843d82f6c4758f92094c43b20af0783b1e5d67e0ab68638081e2",
+      "sizeBytes": 561,
       "accent": 4283395978
     },
     {
@@ -309,10 +309,10 @@
       "summary": "像素风：江南水乡",
       "engine": "pixel",
       "variant": "jiangnan_watertown",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-jiangnan-watertown.ksstyle",
-      "sha256": "f94ada4caeea45b332e0f631fd3bfd3762e91839aa3b4bda8bebb425c11cd455",
-      "sizeBytes": 285,
+      "sha256": "2875f1dca9ffedfdfb2e2b8ea04fa344a71d738b7ef90e82492c05234be13fdd",
+      "sizeBytes": 561,
       "accent": 4283987311
     },
     {
@@ -321,10 +321,10 @@
       "summary": "像素风：云上小镇",
       "engine": "pixel",
       "variant": "cloud_town",
-      "version": 1,
+      "version": 2,
       "downloadUrl": "https://raw.githubusercontent.com/fixz232/ApkeSU-ThemeStore/main/interface-styles/packages/pixel-cloud-town.ksstyle",
-      "sha256": "68603406d21a1598e66159ab18fb2cc85bf9819ecc752e22907ab94f72245768",
-      "sizeBytes": 261,
+      "sha256": "040228b7e6d86c931939ee069ced73d9505f282c02c6a767357145386d82ba01",
+      "sizeBytes": 552,
       "accent": 4285308569
     }
   ]
